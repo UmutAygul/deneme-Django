@@ -6,5 +6,21 @@
     <h3>sea</h3>
     <p>bu blogta geliştirme?</p>
 </div>
+
+{% if number1 == 10 %}
+ <p> Sayımız 20'ye eşit </p>
+
+
+{% else %}
+ <p> Sayımız 20'ye eşit değil </p>
+{% endif %}
+<ul>
+{% for number in numbers %}
+    <li>{{number}}</li>
+{% endfor %}
+</ul>
+
+
+
 {% endblock body %}
 
