@@ -4,7 +4,7 @@ from django.shortcuts import render,HttpResponse
 #url geldiğinde calıstırılacak fonksyionlar
 
 def index(request):
-    return render(request,"article/index.html")
+    return render(request,"index.html")
 
 
 
