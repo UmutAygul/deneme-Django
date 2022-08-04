@@ -1,30 +1,42 @@
 {% extends "layout.html" %}
-
+<!-- iletişim formunun olduğu sayfa burası, nelerin gösterileceğini, fonksiyonların işleyişlerinin görüntülerini burada gösterdim -->
 {% block body %}
 
 <div class="jumbotron text-center">
-    <h3>Merhaba arkadaşlar kanalıma hoş geldiniz</h3>
-    <h3>Bugün, sizlerle birlikte django öğreneceğiz</h3>
-    <h3>:D?</h3>
-    <p>:)</p>
+    <h2>Merhaba </h2>
+    <h3>Çok kısa sürede back-end'ini yapmaya çalıştığım Django projemi görmektesiniz</h3>
+    <h2>:)</h2>
 </div>
 
+<p>Bu sıralar çok yoğun olduğum için çok özenli bir sayfa yapmadığımın farkındayım. Bu benim angulardan sonra ikinci web sitesi tasarlayışım oldu.
+İkisinde de back-end'ine ağırlık verdim. Umarım başlangıç aşaması olarak, çok kötü olduğunu düşünmediğiniz bir proje yapmışımdır
+(ben bir tık farkındayım çok güzel olmadığının geliştirelecek çok fazla şeyi var).
+<br>
+Mesela bir kondisyon sonucu sayının 20'ye eşit olmadığını aşağıda göreceksiniz, bunu ben input alacak şekilde yapabilirim ve girdiğiniz sayı ile bir kaç matematiksel işlem
+gerçekleştirebilirim. 
+<br>
+İkinci olarak, görsellik hiç yok, eklemeler yaparak en kötü bir renk düzeni oluşturabilirdim (icon da eklenebilir). 
+<br>
+Sayfaların sağı, solu ve altı boş bulunmakta. Onlara da çoğu sitelerde olduğu gibi direct linkler ekleyebilir, bilgi çeşitliliği kazandırabilirdim.
+Sağ sol tarafa da bazı bilgiler yansıtabilirdim.
+<br>
 {% if number1 == 10 %}
  <p> Sayımız 20'ye eşit </p>
 
 {% else %}
- <p> Sayımız 20'ye eşit değil </p>
- <p> Ama oluşturduğun liste burada, hadi elemanlarına bakalım </p>
- <p> :D? </p>
+ <p> Sayımız 20'ye eşit değil 
+ <br>
+  Ama oluşturduğun liste burada, hadi elemanlarına bakalım 
+ <br> :D? </p>
 {% endif %}
 <ul>
 {% for number in numbers %}
-
-    <li>the number is : {{number}}</li>
+ <li>The number is : {{number}}</li>
 {% endfor %}
 
 </ul>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta voluptatem voluptatum illum assumenda eaque, dolorum harum doloribus officia impedit maxime totam adipisci sint incidunt sequi facilis, quis veritatis laudantium enim nesciunt, voluptas eos quos. Optio, fugiat quia quisquam sint totam soluta ea non, ducimus asperiores suscipit nostrum animi tempora minima cupiditate, rerum corrupti dicta? Possimus eligendi eveniet dolore ratione in, odio inventore quisquam consectetur libero voluptate, doloribus iusto ab delectus enim quos expedita distinctio. Reprehenderit iste atque, nulla officia modi error ea fuga? Eligendi voluptate vero quos, culpa fugit doloremque nam nostrum. Quisquam consequuntur maxime, eius molestiae magnam dolorum?
+<br>
 <br>
 {% endblock body %}
 

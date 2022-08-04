@@ -1,3 +1,5 @@
+<!-- iletişim formunun olduğu sayfa burası, nelerin gösterileceğini, fonksiyonların işleyişlerinin görüntülerini burada gösterdim -->
+
 {% extends 'layout.html' %}
 {% block body %}
 
@@ -5,9 +7,11 @@
 
 <h3>Iletişim</h3>
 <form action="" method="post">
+    <!-- forma geri dönmesi için action="" kullandım, yani değiştirilen input edilen data contact_view'I cagıracak -->
     {% csrf_token %}
     <table>{{ form }}
-
+        <!-- formun düzenli bir şekilde gösterilmesini sağlar -->
+<!-- post edilecek bir fonksiyon olduğunda djangonun güvenlik önlemini cagırmamız gerekir -->
         
     </table>
     

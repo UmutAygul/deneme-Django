@@ -5,6 +5,9 @@ from .forms import RegisterForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login
 
+#burada bize render edilen fonksiyonların, ne yapacağını belirliyoruz
+
+
 def register(request):
     
     if request.method == "POST":
@@ -19,8 +22,8 @@ def register(request):
             newUser.save()
             
             login(request)
-            # return render(request, 'suc.html')
-            return redirect("index")
+            return render(request, 'suc.html')
+            # return redirect("index")
         context={
         "form":form
     }
@@ -39,6 +42,8 @@ def login(request):
     return render(request,"login.html")
 def logout(request):
     return render(request,"logout.html")
+
+
 
  
 

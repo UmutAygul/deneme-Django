@@ -15,16 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from article import views
 from contact import views as vc
-
+#yonlendirmeler burada, yani bir kişi home main userinfo/ arayışlarıyla nerelere yönlendirileceklerini tanınıtıyoruz.
 urlpatterns = [
-    path('home', views.index,name="index"),
-    path('main', views.index,name="index"),
-    path('', views.index,name="index"),
+    #path'ler burada tanımlanıyor
+    path('home', vc.index,name="index"),
+    path('main', vc.index,name="index"),
+    path('', vc.index,name="index"),
     path('admin/', admin.site.urls),
-    path('about/', views.about,name="about"),
-    path('articles/',include("article.urls")),
+    path('about/', vc.about,name="about"),
     path('userinfo/',include("userinfo.urls")),
     path('contact/',vc.contact_view),
     

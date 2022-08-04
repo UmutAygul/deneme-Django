@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "article",
     "userinfo",
     "contact",
+    
+    #uygulmayı yuklemek iç,n, oluşturulan dosyaların nerede olduğunu djangoya bildirmek gerekiyor
+    #auserinfo ve contacts benim oluşturuduğum appler.
     
 ]
 
