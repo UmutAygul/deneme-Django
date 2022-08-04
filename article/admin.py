@@ -4,7 +4,8 @@ from .models import Article
 
 
 #admin panelindeki article gözükecek
-@admin.register(Article)
+# @admin.register(Article)
+admin.site.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     list_display= ["title","author","created_date"]
     

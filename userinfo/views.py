@@ -19,7 +19,7 @@ def register(request):
             newUser.save()
             
             login(request)
-            
+            # return render(request, 'suc.html')
             return redirect("index")
         context={
         "form":form
@@ -32,8 +32,7 @@ def register(request):
     }  
     return render(request,"register.html",context)
 
-def about(request):
-    return render(request,"about.html")
+
 
 
 def login(request):

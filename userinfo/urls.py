@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from . import views
+from userinfo import views
 
 
-app_name="user"
+app_name="userinfo"
 
 urlpatterns = [
     path('register/',views.register, name="register"),
