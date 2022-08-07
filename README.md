@@ -1,4 +1,4 @@
-# Iki günlük Django back-end projesi
+# DJANGO Back-End Project
 
 ## To run server
 ***py -m pip install --user virtualenv
