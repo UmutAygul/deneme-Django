@@ -1,0 +1,164 @@
+python manage.py startapp article
+web sitesyile olan article ile olan kıısmlar ve deallar buraya yazılır
+bunu oluşturuyporuz ve blog altına bu oluşuyor
+
+python manage.py runs
+projeyi runlayan kod
+
+#article da tablo oluşturmak için snasıl bir sql sorgusuna donuseceğini
+tanımlamak lazım
+
+migrations içine
+yeni bi modul oluşturuyoruz
+bunu da
+python manage.py makemigrations
+bu kod ile yapıyoruz
+
+ardından:
+manage.py migrate
+migrations dosyasına göre tablo oluşturulcak,
+
+
+admin sayfasını özelleştirmeye acmak için
+admin.py klasorune
+
+@admin.register(Article)
+class ArticleAdmin(admin.ModelAdmin):
+    class Meta:
+        model=Article
+yzıyoruz.
+
+
+
+ywazıların üzerine link eklemek:D
+
+
+html sayfalarımı templates altında olusturduktan sonra
+urls e geliyorum
+
+
+yeni bi sayfa oluşturmak için::
+
+tmplates'in altına geli
+sayfa ismini yaz.html
+
+
+layout.html'i davet et
+
+block
+
+endblock olustur
+
+
+arasına hakkımızdafalan bi şeyler
+
+about.html 'i render etmeden once
+
+blog klasrunun altındaki urls'ye soyle tanıt
+yani path ekle
+
+
+template ilişksi için views te index yerine context ile birtupple 
+tanımladık ardın index hhtml gel
+
+
+yeni bir sayfa oluşturulmak istendiinde trerminalden + basarak
+python manage.py startapp user
+user seklinde bir module oluşturdum şuan.
+
+urls.py diye bir dosya oluşutrdum
+
+ve user klasorunde oluşturmak istediğim linkleri, buraya path yolu ekledim
+yani: mesela:
+    path('register/',views.register, name="register"),
+    path('login/',views.login, name="login"),
+    path('logout/',views.logout, name="logout"),
+ardından bu url dosyasını
+ana url ile bağlantılı hale getir
+
+ardından main klasrun templates içinde oluşturmak istediğim login 
+register fsitelerini falan html olarak tanımla
+
+
+ardından views'a gelerek 
+fonksiyonları oluştur..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
